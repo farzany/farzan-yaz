@@ -27,6 +27,12 @@ h1, h2 {
     font-weight: bold;
 }
 
+nav a {
+    margin: 0 7px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
 .db {
     color: #333333;
     border-color: #333333;

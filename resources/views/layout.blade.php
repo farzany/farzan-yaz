@@ -25,14 +25,19 @@
         </span>
     </header>
     <div class="wrapper">
-        {{-- TODO: Redo navigation and remove it from post view --}}
         <div class="">
-            <nav class="flex font-work text-base border-b-2 text-lg mt-10">
-                <a href="/" class="mr-5 pb-4 border-b-2 -mb-0.5 {{Request::path() === '/' ? 'db' : ''}} hover:font-semibold">
+            <nav class="flex font-work text-base text-lg mt-5 justify-center">
+                <a href="/" class="rounded-xl {{Request::path() === '/' ? 'text-db2' : 'text-gray-400'}}">
                     Home
                 </a>
-                <a href="/posts" class="mr-5 pb-4 border-b-2 -mb-0.5 {{Request::path() === 'posts' ? 'db' : ''}} hover:font-semibold">
+                <a href="/posts" class="rounded-xl {{Request::path() === 'posts' ? 'text-db2' : 'text-gray-400'}}">
                     Posts
+                </a>
+                <a href="/resume" class="rounded-xl {{Request::path() === 'resume' ? 'text-db2' : 'text-gray-400'}}">
+                    Resume
+                </a>
+                <a href="/Projects" class="rounded-xl {{Request::path() === 'projects' ? 'text-db2' : 'text-gray-400'}}">
+                    Projects
                 </a>
             </nav>
         </div>
