@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <article class="py-7">
+    <article class="pb-7">
         <div id="details" class="mb-7 flex gap-5">
             <img src="/storage/profile-photo.jpg" alt="" class="w-16 my-auto rounded-full">
             <div class="text-md font-work flex flex-col justify-center">
@@ -22,7 +22,7 @@
                 <a href="https://github.com/farzany" target="__blank" class="fa fa-facebook bg-slate-200 p-3 rounded" title="GitHub"></a> --}}
             </div>
         </div>
-        <div class="w-full h-72 mb-7 bg-[url('{{ $post->image }}')] bg-cover bg-center rounded-xl"></div>
+        <div style="background-image: url('../storage/{{ $post->image }}')" class="w-full h-96 mb-7 bg-cover bg-center rounded-xl"></div>
         <h1 class="font-bold text-[32px] leading-10">
             {{ $post->title }}
         </h1>

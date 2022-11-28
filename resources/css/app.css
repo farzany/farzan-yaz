@@ -47,6 +47,15 @@ nav a {
     color: #fdfdfd;
 }
 
+article.post:hover h2 {
+    color: #0284c7;
+} article.post div.thumbnail {
+    transition: all .2s ease-in-out;
+    background-size: 110%;
+} article.post:hover div.thumbnail {
+    background-size: 150%;
+}
+
 div.social-media a {
     box-sizing: content-box;
     font-size: 28px;
