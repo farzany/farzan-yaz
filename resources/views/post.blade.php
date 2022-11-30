@@ -13,6 +13,8 @@
                     </p>
                     <p class="px-2 dg">·</p>
                     <p class="dg"> {{ $post->getReadDuration()  }} min read </p>
+                    <p class="px-2 dg">·</p>
+                    <a class="text-sky-600 hover:underline" href="TODO">{{ $post->category->name }}</a>
                 </div>
             </div>
             {{-- Make share buttons --}}

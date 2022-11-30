@@ -21,4 +21,13 @@ class Post extends Model
 
         return (int)max(1, $minutesToRead);
     }
+
+    /**
+     * Get the category of the post.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo category
+     */
+    public function category() {
+        return $this->belongsTo(Category::class);
+    }
 }
