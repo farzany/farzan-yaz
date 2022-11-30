@@ -10,7 +10,7 @@
         </p>
     </div>
     @foreach ($posts as $post)
-        <a href="/posts/{{ $post->id }}" class="trasition ease-in-out hover:-translate-y-1 hover:scale-110">
+        <a href="/posts/{{ $post->slug }}" class="trasition ease-in-out hover:-translate-y-1 hover:scale-110">
             <article class="post my-7 p-5 rounded-2xl flex gap-5 justify-between bg-sky-50">
                 <div class="flex justify-center flex-col w-2/3">
                     <p class="pb-1 dg text-sm font-work">{{ date('M jS Y', strtotime($post->created_at)); }}</p>
