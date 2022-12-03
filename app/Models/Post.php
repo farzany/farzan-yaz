@@ -10,6 +10,8 @@ class Post extends Model
 {
     use HasFactory;
 
+    protected $with = ['category'];
+
     /**
      * Get how long a post takes to read.
      *
