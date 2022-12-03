@@ -27,7 +27,7 @@ h1, h2 {
     font-weight: bold;
 }
 
-nav a {
+nav.navigation a {
     margin: 0 7px;
     padding: 5px 10px;
     text-align: center;

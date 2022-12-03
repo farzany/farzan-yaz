@@ -26,7 +26,7 @@
     </header>
     <div class="wrapper">
         <div class="">
-            <nav class="flex font-work text-base text-lg mt-5 justify-center">
+            <nav class="navigation flex font-work text-base text-lg mt-5 justify-center">
                 <a href="/" class="rounded-xl {{Request::path() === '/' ? 'text-db2' : 'text-gray-400'}}">
                     Home
                 </a>

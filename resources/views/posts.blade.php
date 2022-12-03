@@ -41,4 +41,7 @@
             </article>
         </a>
     @endforeach
+    <div class="pagination">
+        {{ $posts->links() }}
+    </div>
 @endsection

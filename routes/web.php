@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('posts', function () {
     return view('posts', [
-        'posts' => Post::all(),
+        'posts' => Post::latest('created_at')->paginate(),
         'categories' => Category::all()
     ]);
 });
@@ -34,7 +34,7 @@ Route::get('posts/{post:slug}', function (Post $post) {
 
 Route::get('posts/categories/{category:slug}', function (Category $category) {
     return view('posts', [
-        'posts' => $category->posts,
+        'posts' => $category->posts()->latest('created_at')->paginate(),
         'categories' => Category::all()
     ]);
 });
