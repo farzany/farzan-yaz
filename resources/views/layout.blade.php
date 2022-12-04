@@ -29,16 +29,16 @@
     <div class="wrapper">
         <div class="">
             <nav class="navigation flex font-work text-base text-lg mt-5 justify-center">
-                <a href="/" class="rounded-xl {{Request::path() === '/' ? 'text-db2' : 'text-gray-400'}}">
+                <a href="/" class="hover:shadow rounded-xl {{Request::path() === '/' ? 'text-db2' : 'text-gray-400'}}">
                     Home
                 </a>
-                <a href="/posts" class="rounded-xl {{Request::path() === 'posts' ? 'text-db2' : 'text-gray-400'}}">
+                <a href="/posts" class="hover:shadow rounded-xl {{Request::path() === 'posts' ? 'text-db2' : 'text-gray-400'}}">
                     Posts
                 </a>
-                <a href="/resume" class="rounded-xl {{Request::path() === 'resume' ? 'text-db2' : 'text-gray-400'}}">
+                <a href="/resume" class="hover:shadow rounded-xl {{Request::path() === 'resume' ? 'text-db2' : 'text-gray-400'}}">
                     Resume
                 </a>
-                <a href="/Projects" class="rounded-xl {{Request::path() === 'projects' ? 'text-db2' : 'text-gray-400'}}">
+                <a href="/Projects" class="hover:shadow rounded-xl {{Request::path() === 'projects' ? 'text-db2' : 'text-gray-400'}}">
                     Projects
                 </a>
             </nav>
