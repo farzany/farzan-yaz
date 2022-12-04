@@ -6,7 +6,7 @@
         <div id="about" class="pt-7">
             <p class="dg text-md font-work text-center">Nov 14 2022</p>
             <h1 class="text-center text-3xl font-semibold font-work p-3 mb-2">
-                Hello! I'm Farzan Yazdanjou, a Computer Science student at McMaster University.
+                Hello! 👋🏼 I'm Farzan Yazdanjou, a Computer Science student at McMaster University.
             </h1>
             <p class="dg text-xl font-work text-center mb-5">I'm currently interning at Coconut Software as a Software Developer! 🥥🌴</p>
             <div class="mb-10 w-full h-96 bg-[url('/../storage/app/public/cover-photo.jpg')] bg-cover bg-center rounded-2xl"></div>
@@ -22,10 +22,12 @@
                 <h2 class="text-xl font-work mb-2">CHECK OUT WHAT I'M LISTENING TO ✨</h2>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4wNpNCgwh82TcUzK3CT5Sn?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="mt-14">
+            <hr class="mb-7 mt-12 border-1 border-dg">
+            <div class="">
                 <h2 class="font-work text-3xl text-center">Latest Blog Post</h2>
                 <x-post-card :post="$post" />
             </div>
+            <hr class="my-10 border-1 border-dg">
             {{-- <h2 class="text-sky-700 text-2xl font-work mb-2">Projects</h2>
             <p class="body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, atque perferendis. Aut, dolorum praesentium. Dolores magnam commodi quas! Amet hic quaerat suscipit sunt blanditiis aut cumque eos quisquam aspernatur quis?
