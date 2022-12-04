@@ -1,7 +1,7 @@
 @props(['post'])
 
 <a href="/posts/{{ $post->slug }}" class="">
-    <article class="post my-7 p-5 rounded-2xl flex gap-5 justify-between outline-2 hover:outline outline-db bg-cyan-50">
+    <article class="shadow-md post my-7 p-5 rounded-2xl flex gap-5 justify-between outline-2 hover:outline hover:shadow-none outline-db bg-sky-100/75">
         <div class="flex justify-center flex-col w-2/3">
             <p class="pb-1 dg text-sm font-work">
                 {{ date('M jS Y', strtotime($post->created_at)); }}
