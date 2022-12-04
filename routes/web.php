@@ -40,3 +40,11 @@ Route::get('posts/categories/{category:slug}', function (Category $category) {
         'categories' => Category::all()
     ]);
 });
+
+Route::get('resume', function () {
+    return view('resume');
+});
+
+Route::get('projects', function () {
+    return view('projects');
+});

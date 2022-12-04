@@ -38,7 +38,7 @@
                 <a href="/resume" class="hover:shadow rounded-xl {{Request::path() === 'resume' ? 'text-db2' : 'text-gray-400'}}">
                     Resume
                 </a>
-                <a href="/Projects" class="hover:shadow rounded-xl {{Request::path() === 'projects' ? 'text-db2' : 'text-gray-400'}}">
+                <a href="/projects" class="hover:shadow rounded-xl {{Request::path() === 'projects' ? 'text-db2' : 'text-gray-400'}}">
                     Projects
                 </a>
             </nav>
