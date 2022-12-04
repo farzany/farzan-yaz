@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'post' => Post::latest('created_at')->first(),
+    ]);
 });
 
 Route::get('posts', function () {
