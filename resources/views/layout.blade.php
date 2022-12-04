@@ -20,9 +20,11 @@
 
 <body>
     <header class="bg-db2 text-center">
-        <span class="text-3xl font-bold font-merri leading-[55px] text-white">
-            Farzan Yazdanjou
-        </span>
+        <a href="/">
+            <span class="header text-3xl font-bold font-merri leading-[55px] text-white">
+                Farzan Yazdanjou
+            </span>
+        </a>
     </header>
     <div class="wrapper">
         <div class="">

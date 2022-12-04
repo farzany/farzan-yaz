@@ -13,6 +13,14 @@ body {
     font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif';
 }
 
+.header {
+    background: #74e8ff;
+    background: -webkit-linear-gradient(to right, #74e8ff, #12D8FA, #1FA2FF);
+    background: linear-gradient(to right, #74e8ff, #12D8FA, #42b0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 p.body, div.body {
     line-height: 32px;
     font-size: 20px;
@@ -47,8 +55,8 @@ nav.navigation a {
     color: #fdfdfd;
 }
 
-article.post:hover h2 {
-    color: #0284c7;
+article.post {
+    /* background: #ddfcff; */
 } article.post div.thumbnail {
     transition: all .2s ease-in-out;
     background-size: 110%;

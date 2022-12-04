@@ -24,14 +24,14 @@
                 <a href="https://github.com/farzany" target="__blank" class="fa fa-facebook bg-slate-200 p-3 rounded" title="GitHub"></a> --}}
             </div>
         </div>
-        <div style="background-image: url('../storage/{{ $post->image }}')" class="w-full h-96 mb-7 bg-cover bg-center rounded-xl"></div>
-        <h1 class="font-bold text-[32px] leading-10">
+        <h1 class="font-bold text-[32px] leading-10 mb-5">
             {{ $post->title }}
         </h1>
-        <p class="pt-3 dg text-xl font-work">
+        <div style="background-image: url('../storage/{{ $post->image }}')" class="w-full h-96 mb-5 bg-cover bg-center rounded-xl"></div>
+        <p class="pl-5 border-l-4 dg text-xl font-work">
             {{ $post->subtitle }}
         </p>
-        <div class="pt-5 body">
+        <div class="pt-8 body">
             {!! $post->body !!}
         </div>
     </article>

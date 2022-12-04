@@ -19,7 +19,7 @@
                 </p>
             </div>
             <div>
-                <h2 class="text-xl font-work mb-2">Check out what I'm listening to ✨</h2>
+                <h2 class="text-xl font-work mb-2">CHECK OUT WHAT I'M LISTENING TO ✨</h2>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4wNpNCgwh82TcUzK3CT5Sn?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
             <div class="mt-14">
