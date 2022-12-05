@@ -10,7 +10,8 @@ div.wrapper {
 }
 
 body {
-    font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif';
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif'; */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -117,8 +118,20 @@ code.language-javascript {
 }
 
 @media only screen and (max-width: 640px) {
+    .text-3xl {
+        font-size: 1.7rem;
+    }
+
+    div.home div.banner {
+        height: 16rem;
+    }
+
     img.posts {
         display: none;
+    }
+
+    nav.navigation a {
+        margin: 0;
     }
 
     article.post-card {
@@ -126,8 +139,9 @@ code.language-javascript {
     } article.post-card div.flex {
         width: 100%;
     } article.post-card div.thumbnail {
-        height: 12rem;
+        height: 10rem;
         width: 100%;
+        flex-grow: 1;
     }
 
     article.post div.info {
@@ -140,6 +154,8 @@ code.language-javascript {
         height: 16rem;
     } article.post h1.title {
         font-size: 30px;
+    } article.post img.profile-photo {
+        width: 3rem;
     }
 
     p.body, div.body {
