@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --main-text-color: rgb(55, 65, 81);
+    /* Old Text Color: #333333 */
+}
+
 div.wrapper {
     width: 750px;
     max-width: 90vw;
@@ -15,12 +20,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-img.posts {
-    transition: transform .7s ease-in-out;
-} img.posts:hover {
-    transform: rotate(360deg);
-}
-
 .header {
     background: #74e8ff;
     background: -webkit-linear-gradient(to right, #74e8ff, #12D8FA, #1FA2FF);
@@ -32,17 +31,25 @@ img.posts {
 p.body, div.body {
     line-height: 32px;
     font-size: 20px;
-    color: #333333;
+    color: var(--main-text-color);
 }
 
 a, p, h1, h2 {
-    color: #333333;
+    color: var(--main-text-color);
 }
 
 h1, h2 {
     font-family: 'Work Sans', 'ui-sans-serif';
     font-weight: bold;
 }
+
+input[type="text"] {
+    caret-color: var(--main-text-color);
+    font-family: 'Work Sans', 'ui-sans-serif';
+    outline: none;
+} input[type="text"]:focus {
+    outline: 1.5px solid #6b8dff;
+} 
 
 nav.navigation a {
     margin: 0 7px;
@@ -51,8 +58,8 @@ nav.navigation a {
 }
 
 .db {
-    color: #333333;
-    border-color: #333333;
+    color: var(--main-text-color);
+    border-color: var(--main-text-color);
 }
 
 .dg {
@@ -71,6 +78,8 @@ article.post-card {
     background-size: 110%;
 } article.post-card:hover div.thumbnail {
     background-size: 150%;
+} article.post-card div.thumbnail#top {
+    display: none;
 }
 
 article.post p.date-short {
@@ -111,11 +120,17 @@ code {
     max-width: 100%;
     min-width: 100px;
     padding: 15px 20px 12px 22px;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 code.language-javascript {
     color: #f5d67b;
+}
+
+div.posts img.posts {
+    transition: transform .7s ease-in-out;
+} div.posts img.posts:hover {
+    transform: rotate(360deg);
 }
 
 @media only screen and (max-width: 640px) {
@@ -144,6 +159,10 @@ code.language-javascript {
         height: 10rem;
         width: 100%;
         flex-grow: 1;
+    } article.post-card div.thumbnail#top {
+        display: block;
+    } article.post-card div.thumbnail#right {
+        display: none;
     }
 
     article.post div#details {
@@ -163,9 +182,11 @@ code.language-javascript {
     } article.post div.banner {
         height: 16rem;
     } article.post h1.title {
-        font-size: 28px;
+        font-size: 30px;
+        line-height: 2rem;
     } article.post p.subtitle {
         font-size: 18px;
+        line-height: 1.5rem;
     } article.post img.profile-photo {
         width: 3rem;
     }
