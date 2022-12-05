@@ -11,6 +11,13 @@ div.wrapper {
 
 body {
     font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif';
+    -webkit-tap-highlight-color: transparent;
+}
+
+img.posts {
+    transition: transform .7s ease-in-out;
+} img.posts:hover {
+    transform: rotate(360deg);
 }
 
 .header {
@@ -55,13 +62,17 @@ nav.navigation a {
     color: #fdfdfd;
 }
 
-article.post {
+article.post-card {
     /* background: #ddfcff; */
-} article.post div.thumbnail {
+} article.post-card div.thumbnail {
     transition: all .2s ease-in-out;
     background-size: 110%;
-} article.post:hover div.thumbnail {
+} article.post-card:hover div.thumbnail {
     background-size: 150%;
+}
+
+article.post p.date-short {
+    display: none;
 }
 
 div.social-media a {
@@ -103,4 +114,40 @@ code {
 
 code.language-javascript {
     color: #f5d67b;
+}
+
+@media only screen and (max-width: 640px) {
+    img.posts {
+        display: none;
+    }
+
+    article.post-card {
+        flex-direction: column;
+    } article.post-card div.flex {
+        width: 100%;
+    } article.post-card div.thumbnail {
+        height: 12rem;
+        width: 100%;
+    }
+
+    article.post div.info {
+        flex-wrap: wrap;
+    } article.post p.date-short {
+        display: block;
+    } article.post p.date-long {
+        display: none;
+    } article.post div.banner {
+        height: 16rem;
+    } article.post h1.title {
+        font-size: 30px;
+    }
+
+    p.body, div.body {
+        line-height: 150%;
+        font-size: 18px;
+    }
+
+    pre {
+        font-size: 16px;
+    }
 }
