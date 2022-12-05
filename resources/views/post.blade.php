@@ -4,7 +4,7 @@
 @section('content')
     <article class="post pb-7">
         <div id="details" class="mb-7 flex gap-5">
-            <img src="/storage/profile-photo.jpg" alt="" class="w-16 my-auto rounded-full">
+            <img src="/storage/profile-photo.jpg" alt="" class="profile-photo w-16 my-auto rounded-full">
             <div class="text-md font-work flex flex-col justify-center">
                 <p class="pt-0.5 font-merri font-semibold">Farzan Yazdanjou</p>
                 <div class="info flex flex-row">
