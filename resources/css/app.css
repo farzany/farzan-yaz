@@ -136,6 +136,7 @@ code.language-javascript {
 
     article.post-card {
         flex-direction: column;
+        gap: 0.75rem;
     } article.post-card div.flex {
         width: 100%;
     } article.post-card div.thumbnail {
@@ -144,8 +145,16 @@ code.language-javascript {
         flex-grow: 1;
     }
 
-    article.post div.info {
+    article.post div#details {
+        gap: 0.5rem;
+    } article.post p.author {
+        font-size: 16px;
+        line-height: 20px;
+    } article.post div.info {
         flex-wrap: wrap;
+        line-height: 18px;
+        padding-bottom: 0.125rem;
+        font-size: 14px;
     } article.post p.date-short {
         display: block;
     } article.post p.date-long {
@@ -153,9 +162,15 @@ code.language-javascript {
     } article.post div.banner {
         height: 16rem;
     } article.post h1.title {
-        font-size: 30px;
+        font-size: 28px;
+    } article.post p.subtitle {
+        font-size: 18px;
     } article.post img.profile-photo {
         width: 3rem;
+    }
+
+    div.posts div.description h1 {
+        font-size: 1.7rem;
     }
 
     p.body, div.body {

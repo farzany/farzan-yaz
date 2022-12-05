@@ -1,9 +1,9 @@
 @extends('layout')
 
 @section('content')
-    <div>
+    <div class="posts">
         <div class="flex gap-5">
-            <div>
+            <div class="description">
                 <h1 class="font-bold text-[32px] leading-10">
                     Blog Posts
                 </h1>

@@ -3,10 +3,10 @@
 
 @section('content')
     <article class="post pb-7">
-        <div id="details" class="mb-7 flex gap-5">
-            <img src="/storage/profile-photo.jpg" alt="" class="profile-photo w-16 my-auto rounded-full">
+        <div id="details" class="mb-7 flex gap-5 bg-sky-100/75 rounded-xl">
+            <img src="/storage/profile-photo.jpg" alt="" class="profile-photo w-16 my-auto rounded-xl p-1">
             <div class="text-md font-work flex flex-col justify-center">
-                <p class="pt-0.5 font-merri font-semibold">Farzan Yazdanjou</p>
+                <p class="author pt-0.5 text-lg leading-6">Farzan Yazdanjou</p>
                 <div class="info flex flex-row">
                     <p class="dg date-long">
                         {{ date('M jS Y', strtotime($post->created_at)); }}
