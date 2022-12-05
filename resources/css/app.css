@@ -4,7 +4,7 @@
 
 :root {
     --main-text-color: rgb(55, 65, 81);
-    /* Old Text Color: #333333 */
+    /* --main-text-color: #333333; */
 }
 
 div.wrapper {

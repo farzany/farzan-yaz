@@ -33,7 +33,7 @@
         </div>
         <div class="py-5 mt-12 flex justify-center items-center">
             <img src="/storage/email-laptop.svg" class="w-36" alt="">
-            <div class="text-center pr-7 flex flex-col items-center h-full w-full">
+            <div class="text-center flex flex-col items-center h-full w-fit pr-4">
                 <h2 class="text-xl">Subscribe to get notified about new posts!</h2>
                 <p class="font-work text-lg pb-3">I'll keep it clean, I promise - only one a week.</p>
                 <div class="relative w-96 max-w-full">
