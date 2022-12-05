@@ -9,7 +9,7 @@
                 Hello! 👋🏼 I'm Farzan Yazdanjou, a Computer Science student at McMaster University.
             </h1>
             <p class="dg text-xl font-work text-center mb-5">I'm currently interning at Coconut Software as a Software Developer! 🥥🌴</p>
-            <div class="mb-10 w-full h-96 bg-[url('/../storage/app/public/cover-photo.jpg')] bg-cover bg-center rounded-2xl"></div>
+            <div style="background-image: url('/storage/cover-photo.jpg')" class="mb-10 w-full h-96 bg-cover bg-center rounded-2xl"></div>
             <div>
                 <p class="body mb-3">
                     I'm a third year student at McMaster University studying Computer Science. As a full-stack programmer, I am passionate about web-app development! For more information about my academic career, please visit my LinkedIn profile!
