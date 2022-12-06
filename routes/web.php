@@ -2,7 +2,9 @@
 
 use App\Models\Post;
 use App\Models\Category;
+use MailchimpMarketing\ApiClient;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Validation\ValidationException;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,31 +16,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::post('newsletter', function () {
-
-    request()->validate(['email' => 'required|email']);
-
-    $mailchimp = new \MailchimpMarketing\ApiClient();
-
-    $mailchimp->setConfig([
-        'apiKey' => config('services.mailchimp.key'),
-        'server' => 'us17'
-    ]);
-    
-    try {
-        $response = $mailchimp->lists->addListMember('3438ae2923', [
-            'email_address' => request('email'),
-            'status'        => 'pending',
-        ]);
-    } catch (Exception $e) {
-        throw Illuminate\Validation\ValidationException::withMessages([
-            'email' => 'The email must be a valid email address.',
-        ]);
-    }
-
-    return redirect('posts')->with('success', "you're signed up!");
-});
 
 Route::get('/', function () {
     return view('home', [
@@ -72,4 +49,31 @@ Route::get('resume', function () {
 
 Route::get('projects', function () {
     return view('projects');
+});
+
+Route::post('newsletter', function () {
+
+    request()->validate(['email' => 'required|email']);
+
+    $mailchimp = new ApiClient();
+
+    $mailchimp->setConfig([
+        'apiKey' => config('services.mailchimp.key'),
+        'server' => 'us17'
+    ]);
+    
+    try {
+        $mailchimp->lists->addListMember(config('services.mailchimp.list'), [
+            'email_address' => request('email'),
+            'status'        => 'pending',
+        ]);
+    } catch (Exception $e) {
+        session()->flash('error', "The provided email address is invalid.");
+
+        throw ValidationException::withMessages([
+            'email' => 'The email must be a valid email address.',
+        ]);
+    }
+
+    return redirect('posts')->with('success', "You've subscribed to the newsletter! Check your email to confirm.");
 });

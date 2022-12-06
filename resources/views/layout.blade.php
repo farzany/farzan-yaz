@@ -8,6 +8,7 @@
     <!-- Scripts and Symbols -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,4 +65,6 @@
             © 2022 Farzan Yazdanjou
         </p>
     </footer>
+
+    <x-snack-bar />
 </body>
