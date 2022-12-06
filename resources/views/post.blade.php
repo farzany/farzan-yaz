@@ -33,4 +33,6 @@
             {!! $post->body !!}
         </div>
     </article>
+    <x-post-ending />
+    <x-newsletter />
 @endsection
