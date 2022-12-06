@@ -26,12 +26,19 @@
             </div>
         </div>
         <div>
-            @foreach ($posts as $post)
-                <x-post-card :post="$post" />
-            @endforeach
-            <div class="pagination">
-                {{ $posts->links() }}
-            </div>
+            @if ($posts->isNotEmpty())
+                @foreach ($posts as $post)
+                    <x-post-card :post="$post" />
+                @endforeach
+                <div class="pagination">
+                    {{ $posts->links() }}
+                </div>
+            @else
+                <div class="w-full h-96 flex items-center flex-col justify-center">
+                    <h2 class="text-3xl text-gray-400">No posts, yet...</h2>
+                </div>
+            @endif
+            
         </div>
         <div class="newsletter py-12 mt-12 flex justify-center items-center border-y border-db">
             <img src="/storage/email-laptop.svg" class="w-40 mt-auto" alt="">

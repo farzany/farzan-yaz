@@ -19,11 +19,13 @@
                 I have 3000 hours on CSGO, which basically makes me a professional gamer. I love biking through trails and the city and photographing the scenary. I've watched the Iron Man trilogy countless times. I'm always listening to music - my favorite song is Mutual Butterflies by Ryan Trey. I've lost my fair share of money gambling on Cryptocurrency. As one does, I of course also love memes.
             </p>
         </div>
-        <hr class="mb-7 mt-12 border-1 border-dg">
-        <div class="">
-            <h2 class="font-work text-3xl text-center">Latest Blog Post</h2>
-            <x-post-card :post="$post" />
-        </div>
+        @if ($post)
+            <hr class="mb-7 mt-12 border-1 border-dg">
+            <div class="">
+                <h2 class="font-work text-3xl text-center">Latest Blog Post</h2>
+                <x-post-card :post="$post" />
+            </div>
+        @endif
         <hr class="my-10 border-1 border-dg">
         <div>
             <h2 class="text-xl font-work mb-2 text-center">CHECK OUT WHAT I'M LISTENING TO ✨</h2>
