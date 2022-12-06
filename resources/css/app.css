@@ -199,7 +199,7 @@ div.posts img.posts {
         font-size: 1.7rem;
     } div.posts div.newsletter {
         flex-wrap: wrap;
-    } div.posts div.newsletter div.subscribe {
+    } div.posts div.newsletter form.subscribe {
         padding-right: 0;
     } div.posts div.newsletter img {
         display: none;

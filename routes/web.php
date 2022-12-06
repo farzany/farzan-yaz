@@ -15,6 +15,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('newsletter', function () {
+
+    request()->validate(['email' => 'required|email']);
+
+    $mailchimp = new \MailchimpMarketing\ApiClient();
+
+    $mailchimp->setConfig([
+        'apiKey' => config('services.mailchimp.key'),
+        'server' => 'us17'
+    ]);
+    
+    try {
+        $response = $mailchimp->lists->addListMember('3438ae2923', [
+            'email_address' => request('email'),
+            'status'        => 'pending',
+        ]);
+    } catch (Exception $e) {
+        throw Illuminate\Validation\ValidationException::withMessages([
+            'email' => 'The email must be a valid email address.',
+        ]);
+    }
+
+    return redirect('posts')->with('success', "you're signed up!");
+});
+
 Route::get('/', function () {
     return view('home', [
         'post' => Post::latest('created_at')->first(),
