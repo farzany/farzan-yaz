@@ -48,10 +48,10 @@
         </div>
     </div>
     <footer class="h-[250px] relative text-center bg-[#f0f0f0]">
-        <h2 class="font-merri text-2xl font-bold pt-8 pb-2 text-db2">
+        <h2 class="font-merri text-2xl font-bold pt-8 pb-2 text-db">
             Farzan Yazdanjou
         </h2>
-        <p class="font-work">
+        <p class="font-work text-db">
             Software Developer
         </p>
         <div class="social-media flex justify-center gap-5 py-6"> 

@@ -134,6 +134,10 @@ div.posts img.posts {
 }
 
 @media only screen and (max-width: 640px) {
+    div.wrapper {
+        min-height: 85vh;
+    }
+
     .text-3xl {
         font-size: 1.7rem;
     }
@@ -193,6 +197,12 @@ div.posts img.posts {
 
     div.posts div.description h1 {
         font-size: 1.7rem;
+    } div.posts div.newsletter {
+        flex-wrap: wrap;
+    } div.posts div.newsletter div.subscribe {
+        padding-right: 0;
+    } div.posts div.newsletter img {
+        display: none;
     }
 
     p.body, div.body {
