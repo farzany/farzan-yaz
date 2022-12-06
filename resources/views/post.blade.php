@@ -22,7 +22,7 @@
             </div>
             {{-- Make share buttons --}}
         </div>
-        <h1 class="title font-bold text-[32px] leading-10 mb-5">
+        <h1 class="title font-bold text-4xl leading-10 mb-5">
             {{ $post->title }}
         </h1>
         <div style="background-image: url('../storage/{{ $post->image }}')" class="banner w-full h-96 mb-5 bg-cover bg-center rounded-xl"></div>

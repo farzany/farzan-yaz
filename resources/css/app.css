@@ -100,7 +100,8 @@ div.social-media a {
 pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     font-size: 18px;
-    background-color: #212427;
+    /* background-color: #212427; */
+    background-color: var(--main-text-color);
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -108,7 +109,7 @@ pre {
 .string {
     color: #f5d67b;
 } .bool {
-    color: dodgerblue;
+    color: rgb(112, 210, 255);
 }
 
 code {
@@ -197,11 +198,11 @@ div.posts img.posts {
 
     div.posts div.description h1 {
         font-size: 1.7rem;
-    } div.posts div.newsletter {
+    } div.newsletter {
         flex-wrap: wrap;
-    } div.posts div.newsletter form.subscribe {
+    } div.newsletter form.subscribe {
         padding-right: 0;
-    } div.posts div.newsletter img {
+    } div.newsletter img {
         display: none;
     }
 
