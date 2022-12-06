@@ -38,7 +38,6 @@
                     <h2 class="text-3xl text-gray-400">No posts, yet...</h2>
                 </div>
             @endif
-            
         </div>
         <x-newsletter />
     </div>
