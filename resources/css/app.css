@@ -18,6 +18,7 @@ body {
     /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif';
     -webkit-tap-highlight-color: transparent;
+    color: var(--main-text-color);
 }
 
 .header {
@@ -95,6 +96,22 @@ div.social-media a {
     border-radius: 200px;
     text-align: center;
     margin: 0;
+}
+
+div.connect a {
+    box-sizing: content-box;
+    font-size: 48px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    text-align: center;
+    margin: 0;
+    color: rgb(59 130 246);
+    transition: all .2s ease-in-out;
+} div.connect a:hover {
+    color: rgb(37 99 235);
+    transform: scale(1.2);
 }
 
 pre {
@@ -220,4 +237,17 @@ div.posts img.posts {
         bottom: 1rem;
         left: 1rem;
     }
+
+    div.connect a {
+        box-sizing: content-box;
+        font-size: 40px;
+        padding: 6px;
+        width: 50px;
+        height: 50px;
+        border-radius: 200px;
+        text-align: center;
+        margin: 0;
+        color: rgb(59 130 246);
+        transition: all .2s ease-in-out;
+    } 
 }

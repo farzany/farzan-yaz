@@ -3,10 +3,10 @@
 
 @section('content')
     <div class="home">
-        <h2 class="text-center text-3xl font-semibold font-work p-3">
+        <h2 class="text-center text-3xl font-semibold font-work p-3 sm:text-4xl">
             Hello there! 👋🏼
         </h2>
-        <h1 class="text-center text-3xl font-semibold font-work p-3 pt-0 mb-2">
+        <h1 class="text-center text-3xl font-semibold font-work p-3 pt-0 mb-2 sm:text-4xl">
             I'm Farzan Yazdanjou, a Computer Science student at McMaster University.
         </h1>
         <p class="dg text-xl font-work text-center mb-5">I'm currently interning at Coconut Software as a Software Developer! 🥥🌴</p>
@@ -27,6 +27,18 @@
             </div>
         @endif
         <hr class="my-10 border-1 border-dg">
+        <div class="flex justify-center items-center flex-col">
+            <h2 class="text-3xl font-work text-center">Connect with me!</h2>
+            <p class="font-work text-center text-md text-gray-400">LinkedIn · GitHub · YouTube · Instagram</p>
+            <p class="font-work text-center body pt-2">Let's talk tech, development, career, or just like eachother's Instagram posts like semi-strangers.</p>
+            <div class="connect flex justify-center gap-5 pt-6">
+                <a href="https://www.linkedin.com/in/farzany/" target="__blank" class="fa fa-linkedin" title="LinkedIn"></a>
+                <a href="https://github.com/farzany" target="__blank" class="fa fa-github" title="GitHub"></a>
+                <a href="https://www.youtube.com/@farzany" target="__blank" class="fa fa-youtube-play" title="YouTube"></a>
+                <a href="https://www.instagram.com/farzany/" target="__blank" class="fa fa-instagram" title="Instagram"></a>
+            </div>
+        </div>
+        <hr class="mb-10 mt-8 border-1 border-dg">
         <div>
             <h2 class="text-xl font-work mb-2 text-center">CHECK OUT WHAT I'M LISTENING TO ✨</h2>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4wNpNCgwh82TcUzK3CT5Sn?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

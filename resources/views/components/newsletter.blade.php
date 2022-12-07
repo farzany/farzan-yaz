@@ -1,5 +1,5 @@
-<div class="newsletter py-12 mt-12 border-y border-db flex flex-col">
-    <div class="flex justify-center items-center">
+<div class="newsletter py-12 mt-12 border-y border-db flex flex-col w-full">
+    <div class="flex justify-center items-center w-full">
         <img src="/storage/email-laptop.svg" class="w-40 mt-auto" alt="">
         <form method="POST" action="/newsletter" class="subscribe text-center flex flex-col items-center h-full w-fit max-w-full pr-4">
             @csrf
@@ -18,8 +18,8 @@
             <button type="submit" class="w-96 max-w-full text-white focus:ring-4 focus:outline-none font-work rounded-lg px-5 py-2.5 mt-2 text-center bg-blue-500 hover:bg-blue-600">Subscribe</button>
         </form>
     </div>
-    <div class="newsletter pt-12 flex justify-center items-center">
+    <div class="newsletter pt-12 gap-5 flex justify-center items-center w-full text-center sm:text-left">
         <div class="g-ytsubscribe" data-channelid="UCvrcJLLb73nSfFRurmGUQuQ" data-layout="default" data-count="default"></div>
-        <p class="text-lg pl-5 font-work">More of a visual learner? Subscribe to my YouTube channel!</p>
+        <p class="text-lg font-work">More of a visual learner? Subscribe to my YouTube channel!</p>
     </div>
 </div>
