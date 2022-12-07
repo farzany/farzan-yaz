@@ -20,35 +20,49 @@ use Illuminate\Validation\ValidationException;
 Route::get('/', function () {
     return view('home', [
         'post' => Post::latest('created_at')->first(),
+        'metaTitle' => 'Farzan Yazdanjou',
+        'metaDescription' => "Hello there! 👋🏼 I'm Farzan Yazdanjou, a Computer Science student at McMaster University. I'm interning at Coconut Software as a Software Developer! 🥥🌴",
     ]);
 });
 
 Route::get('posts', function () {
     return view('posts', [
         'posts' => Post::latest('created_at')->paginate(),
-        'categories' => Category::all()
+        'categories' => Category::all(),
+        'metaTitle' => 'Posts - Farzan Yazdanjou',
+        'metaDescription' => 'Hey! 👋🏼 I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
     ]);
 });
 
 Route::get('posts/{post:slug}', function (Post $post) {
     return view('post', [
-        'post' => $post
+        'post' => $post,
+        'metaTitle' => "$post->title - Farzan Yazdanjou",
+        'metaDescription' => $post->excerpt,
     ]);
 });
 
 Route::get('posts/categories/{category:slug}', function (Category $category) {
     return view('posts', [
         'posts' => $category->posts()->latest('created_at')->paginate(),
-        'categories' => Category::all()
+        'categories' => Category::all(),
+        'metaTitle' => "$category->name Posts - Farzan Yazdanjou",
+        'metaDescription' => 'Hey! 👋🏼 I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
     ]);
 });
 
 Route::get('resume', function () {
-    return view('resume');
+    return view('resume', [
+        'metaTitle' => 'Resume - Farzan Yazdanjou',
+        'metaDescription' => '', // TODO
+    ]);
 });
 
 Route::get('projects', function () {
-    return view('projects');
+    return view('projects', [
+        'metaTitle' => 'Projects - Farzan Yazdanjou',
+        'metaDescription' => '', // TODO
+    ]);
 });
 
 Route::post('newsletter', function () {
