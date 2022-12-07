@@ -67,7 +67,7 @@
         <div class="social-media flex justify-center gap-5 py-6"> 
             <a href="https://www.linkedin.com/in/farzany/" target="__blank" class="fa fa-linkedin" title="LinkedIn"></a>
             <a href="https://github.com/farzany" target="__blank" class="fa fa-github" title="GitHub"></a>
-            <a href="https://www.youtube.com/channel/UCvrcJLLb73nSfFRurmGUQuQ" target="__blank" class="fa fa-youtube-play" title="YouTube"></a>
+            <a href="https://www.youtube.com/@farzany" target="__blank" class="fa fa-youtube-play" title="YouTube"></a>
             <a href="https://www.instagram.com/farzany/" target="__blank" class="fa fa-instagram" title="Instagram"></a>
         </div>
         <p class="font-work text-dg">
