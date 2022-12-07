@@ -15,7 +15,7 @@
             @error('email')
                 <span class="text-sm text-red-500 font-work w-full pt-2">{{ $message }}</span>
             @enderror
-            <button type="submit" class="w-96 max-w-full text-white focus:ring-4 focus:outline-none font-work rounded-lg px-5 py-2.5 mt-2 text-center bg-blue-500 hover:bg-blue-600">Subscribe</button>
+            <button type="submit" class="w-96 text-lg max-w-full text-white focus:ring-4 focus:outline-none font-work rounded-lg px-5 py-2.5 mt-2 text-center bg-blue-500 hover:bg-blue-600">Subscribe</button>
         </form>
     </div>
     <div class="newsletter pt-12 gap-5 flex justify-center items-center w-full text-center sm:text-left">
