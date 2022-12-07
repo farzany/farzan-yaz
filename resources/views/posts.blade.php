@@ -9,7 +9,7 @@
                         Blog Posts
                     </h1>
                     <p class="text-xl pt-2">
-                        Take a look at some of the blog posts that I've written! Some of the technical ones have an accompanying YouTube video going over the same content.
+                        I post short articles about technology, programming tutorials and tips, career discussions, and more. I aim to post at least once a week - with an accompanying YouTube video for each post. If video content intrigues you more, check out my <a href="https://www.youtube.com/@farzany" target="_blank" class="font-semibold text-red-500 hover:underline">YouTube channel</a>!
                     </p>
                 </div>
                 <img class="posts grow flex-grow w-32" src="/storage/connected-globe.svg" alt="">
