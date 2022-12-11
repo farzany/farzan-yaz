@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-    --main-text-color: rgb(55, 65, 81);
-    /* --main-text-color: #333333; */
+    --main-header-color: rgb(55, 65, 81);
+    --main-text-color: rgb(17 24 39);
 }
 
 div.wrapper {
@@ -15,8 +15,8 @@ div.wrapper {
 }
 
 body {
-    /* font-family: 'Work Sans', sans-serif; */
-    font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif';
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif'; */
     -webkit-tap-highlight-color: transparent;
     color: var(--main-text-color);
 }
@@ -33,15 +33,42 @@ p.body, div.body {
     line-height: 32px;
     font-size: 20px;
     color: var(--main-text-color);
-}
-
-a, p, h1, h2 {
+} a, p {
     color: var(--main-text-color);
-}
-
-h1, h2 {
+} h1, h2 {
+    color: var(--main-header-color);
     font-family: 'Work Sans', 'ui-sans-serif';
     font-weight: bold;
+} h2.body {
+    font-size: 24px;
+    line-height: 100%;
+} p.quote {
+    background-color:  rgb(241 245 249);
+    border-left: 2px solid var(--main-header-color);
+    padding: 5px 0px 5px 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+} a.inline {
+    color: rgb(37 99 235);
+    font-weight: 500;
+} a.inline:hover {
+    text-decoration: underline;
+} img.body {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+} img.body.light {
+    padding: 5px;
+    border: 2px solid var(--main-header-color);
+}
+
+article.post p.body {
+    padding-bottom: 40px;
+} article.post p.body.break {
+    padding-bottom: 20px;
+} article.post h2.body {
+    padding-bottom: 15px;
 }
 
 input[type="text"] {
