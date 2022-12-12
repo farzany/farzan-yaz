@@ -2,7 +2,7 @@
 
 <a href="/posts/{{ $post->slug }}">
     <article class="post-card shadow-md my-7 p-5 rounded-2xl flex gap-5 justify-between outline-2 hover:outline hover:shadow-none outline-db bg-sky-50">
-        <div style="background-image: url('/storage/{{ $post->image }}')" id="top" class="thumbnail shrink-0 w-48 bg-center rounded-t-xl"></div>
+        <div style="background-image: url('/storage/posts/{{ $post->image }}')" id="top" class="thumbnail shrink-0 w-48 bg-center rounded-t-xl"></div>
         <div class="flex justify-center flex-col w-2/3">
             <p class="pb-1 dg text-sm font-work">
                 {{ date('M jS Y', strtotime($post->created_at)); }}
@@ -18,6 +18,6 @@
                 {{ $post->excerpt }}
             </div>
         </div>
-        <div style="background-image: url('/storage/{{ $post->image }}')" id="right" class="thumbnail shrink-0 w-48 bg-center rounded-xl"></div>
+        <div style="background-image: url('/storage/posts/{{ $post->image }}')" id="right" class="thumbnail shrink-0 w-48 bg-center rounded-xl"></div>
     </article>
 </a>

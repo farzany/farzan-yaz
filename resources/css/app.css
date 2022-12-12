@@ -4,7 +4,8 @@
 
 :root {
     --main-header-color: rgb(55, 65, 81);
-    --main-text-color: rgb(17 24 39);
+    --main-text-color: rgb(31, 41, 55);
+    /* --main-text-color: rgb(17 24 39); */
 }
 
 div.wrapper {
@@ -105,6 +106,7 @@ article.post-card {
     transition: all .2s ease-in-out;
     background-size: 110%;
 } article.post-card:hover div.thumbnail {
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     background-size: 150%;
 } article.post-card div.thumbnail#top {
     display: none;

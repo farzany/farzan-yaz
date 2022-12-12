@@ -25,7 +25,7 @@
         <h1 class="title font-bold text-4xl leading-10 mb-5">
             {{ $post->title }}
         </h1>
-        <div style="background-image: url('../storage/{{ $post->image }}')" class="banner w-full h-96 mb-5 bg-cover bg-center rounded-xl"></div>
+        <div style="background-image: url('../storage/posts/{{ $post->image }}')" class="banner w-full h-96 mb-5 bg-cover bg-center rounded-xl"></div>
         <p class="subtitle pl-3 border-l-2 dg text-xl font-work">
             {{ $post->subtitle }}
         </p>
