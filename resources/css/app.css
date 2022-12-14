@@ -54,22 +54,43 @@ p.body, div.body {
     font-weight: 500;
 } a.inline:hover {
     text-decoration: underline;
+} a.inline.youtube {
+    color: rgb(248 113 113);
 } img.body {
     width: 100%;
     border-radius: 12px;
-    margin-top: -20px;
     margin-bottom: 20px;
 } img.body.light {
     padding: 5px;
     border: 2px solid var(--main-header-color);
+} img.body.end {
+    margin-bottom: 40px;
+} img.body.break {
+    margin-bottom: 0px;
+} ul.body {
+    list-style: inside;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 article.post p.body {
     padding-bottom: 40px;
 } article.post p.body.break {
     padding-bottom: 20px;
+} article.post p.body.list-header {
+    padding-bottom: 10px;
+    font-weight: 600;
 } article.post h2.body {
     padding-bottom: 15px;
+} article.post div.side-note {
+    background-color:  rgb(241 245 249);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+} article.post div.references {
+    padding-top: 20px;
+} article.post hr {
+    border: 1px solid #757575;
 }
 
 input[type="text"] {
@@ -146,10 +167,10 @@ div.connect a {
 pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
     font-size: 18px;
-    /* background-color: #212427; */
+    height: fit-content;
     background-color: var(--main-text-color);
     border-radius: 8px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .string {
@@ -162,16 +183,26 @@ code {
     background: none;
     white-space: pre;
     -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
+    overflow-x: auto;
     display: block;
-    max-width: 100%;
-    min-width: 100px;
     padding: 15px 20px 12px 22px;
-    line-height: 1.5;
+    line-height: 1.6;
+    height: fit-content;
+    width: 100%;
 }
 
 code.language-javascript {
     color: #f5d67b;
+} code.terminal {
+    color: #fdfdfd;
+}
+
+.inline-code {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    background-color: rgb(229 231 235);
+    padding: 3px 7px;
+    border-radius: 8px;
+    font-size: 0.9em;
 }
 
 div.posts img.posts {
