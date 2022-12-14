@@ -3,7 +3,8 @@
 <head>
     @vite('resources/css/app.css')
     <meta charset="UTF-8">
-    <meta name="description" content="{{ $metaDescription ?? '' }}"> <!-- TODO -->
+    <meta name="description" content="{{ $metaDescription ?? '' }}">
+    <meta property="og:image" content="{{ "../storage/$metaImage" }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/storage/favicon/apple-touch-icon.png">

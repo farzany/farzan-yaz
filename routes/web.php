@@ -22,6 +22,7 @@ Route::get('/', function () {
         'post' => Post::latest('created_at')->first(),
         'metaTitle' => 'Farzan Yazdanjou',
         'metaDescription' => "Hello there! 👋🏼 I'm Farzan Yazdanjou, a Computer Science student at McMaster University. I'm interning at Coconut Software as a Software Developer! 🥥🌴",
+        'metaImage' => 'cover-photo.jpg',
     ]);
 });
 
@@ -31,6 +32,7 @@ Route::get('posts', function () {
         'categories' => Category::all(),
         'metaTitle' => 'Posts - Farzan Yazdanjou',
         'metaDescription' => 'Hey! 👋🏼 I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
+        'metaImage' => 'cover-photo.jpg',
     ]);
 });
 
@@ -39,6 +41,7 @@ Route::get('posts/{post:slug}', function (Post $post) {
         'post' => $post,
         'metaTitle' => "$post->title - Farzan Yazdanjou",
         'metaDescription' => $post->excerpt,
+        'metaImage' => "posts/$post->image",
     ]);
 });
 
@@ -48,6 +51,7 @@ Route::get('posts/categories/{category:slug}', function (Category $category) {
         'categories' => Category::all(),
         'metaTitle' => "$category->name Posts - Farzan Yazdanjou",
         'metaDescription' => 'Hey! 👋🏼 I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
+        'metaImage' => 'cover-photo.jpg',
     ]);
 });
 
@@ -55,6 +59,7 @@ Route::get('resume', function () {
     return view('resume', [
         'metaTitle' => 'Resume - Farzan Yazdanjou',
         'metaDescription' => '', // TODO
+        'metaImage' => 'cover-photo.jpg',
     ]);
 });
 
@@ -62,6 +67,7 @@ Route::get('projects', function () {
     return view('projects', [
         'metaTitle' => 'Projects - Farzan Yazdanjou',
         'metaDescription' => '', // TODO
+        'metaImage' => 'cover-photo.jpg',
     ]);
 });
 
