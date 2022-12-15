@@ -8,6 +8,10 @@
     /* --main-text-color: rgb(17 24 39); */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 div.wrapper {
     width: 750px;
     max-width: 90vw;
