@@ -92,6 +92,41 @@ article.post p.body {
     padding-top: 20px;
 } article.post hr {
     border: 1px solid #757575;
+} article.post div.contents {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:  rgb(241 245 249);
+    padding: 0 20px;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 40px;
+} article.post div.contents ul {
+    padding-bottom: 20px;
+} article.post .collapsible {
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Work Sans', 'ui-sans-serif';
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--main-header-color);
+    line-height: 100%;
+    background-color: rgb(241 245 249);
+    padding: 20px;
+    border-radius: 12px;
+} article.post .collapsible:hover {
+    background-color: rgb(226 232 240);
+    color: var(--main-header-color);
+} article.post .collapsible:after {
+    content: '\02795';
+    font-size: 22px;
+    float: right;
+    margin-left: 5px;
+} .active {
+    border-radius: 12px 12px 0 0 !important;
+    color: var(--main-header-color) !important;
+} .active:after {
+    content: "\2796" !important;
 }
 
 input[type="text"] {
@@ -231,6 +266,10 @@ div.posts img.posts {
 
     nav.navigation a {
         margin: 0;
+    }
+
+    ul.body {
+        padding-left: 10px;
     }
 
     article.post-card {
