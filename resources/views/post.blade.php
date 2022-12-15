@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <article class="post pb-7">
+    <article class="post">
         <div id="details" class="mb-7 flex gap-5 bg-sky-100/75 rounded-xl">
             <img src="/storage/profile-photo.jpg" alt="" class="profile-photo w-16 my-auto rounded-xl p-1">
             <div class="text-md font-work flex flex-col justify-center">
