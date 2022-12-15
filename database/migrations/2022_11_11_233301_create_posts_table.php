@@ -23,6 +23,7 @@ return new class extends Migration
             $table->text('excerpt');
             $table->text('image');
             $table->text('body');
+            $table->string('video')->nullable();
             $table->dateTime('created_at')->useCurrent()->index();
             $table->dateTime('updated_at')
                 ->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'))

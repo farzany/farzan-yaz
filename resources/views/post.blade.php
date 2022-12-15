@@ -25,6 +25,13 @@
         <h1 class="title font-bold text-4xl leading-10 mb-5">
             {{ $post->title }}
         </h1>
+        @if ($post->video)
+            <a href="{{ $post->video }}" target="_blank">
+                <button class="font-bold text-lg bg-red-400 mb-5 px-3 py-1 text-white rounded-xl hover:bg-red-500">
+                    Watch this post on YouTube
+                </button>
+            </a>
+        @endif
         <div style="background-image: url('../storage/posts/{{ $post->image }}')" class="banner w-full h-96 mb-5 bg-cover bg-center rounded-xl"></div>
         <p class="subtitle pl-3 border-l-2 dg text-xl font-work">
             {{ $post->subtitle }}

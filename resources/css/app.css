@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: overlay;
 }
 
 div.wrapper {
@@ -17,6 +18,7 @@ div.wrapper {
     max-width: 90vw;
     min-height: 75vh;
     margin: auto;
+    overflow: overlay;
 }
 
 body {
@@ -24,6 +26,7 @@ body {
     /* font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', 'Times', 'serif'; */
     -webkit-tap-highlight-color: transparent;
     color: var(--main-text-color);
+    overflow: overlay;
 }
 
 .header {
