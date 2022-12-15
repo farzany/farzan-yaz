@@ -18,7 +18,6 @@ div.wrapper {
     max-width: 90vw;
     min-height: 75vh;
     margin: auto;
-    overflow: overlay;
 }
 
 body {
