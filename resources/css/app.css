@@ -133,6 +133,15 @@ article.post p.body {
     color: var(--main-header-color) !important;
 } .active:after {
     content: "\2796" !important;
+} article.post a.download-image {
+    position: relative;
+} article.post a.download-image::before {
+    content: "Click to download image";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    color: #fdfdfd;
+    font-size: 16px;
 }
 
 input[type="text"] {
@@ -213,12 +222,15 @@ pre {
     background-color: var(--main-text-color);
     border-radius: 8px;
     margin-bottom: 20px;
-}
-
-.string {
-    color: #f5d67b;
-} .bool {
-    color: rgb(112, 210, 255);
+} pre.end {
+    margin-bottom: 50px;
+} pre.output::before {
+    content: "Output";
+    color: #fdfdfd;
+    position: relative;
+    left: 22px;
+    top: 12px;
+    color: #12D8FA;
 }
 
 code {
@@ -231,12 +243,24 @@ code {
     line-height: 1.6;
     height: fit-content;
     width: 100%;
+    color: #fdfdfd;
+} code.terminal {
+    line-height: 1.6;
 }
 
-code.language-javascript {
+code.string {
     color: #f5d67b;
-} code.terminal {
-    color: #fdfdfd;
+} code span.string {
+    color: #f5d67b;
+} code span.variable {
+    color: #4dfffc;
+} code span.method {
+    color: #46b2ff;
+} code span.escape {
+    /* color: #ff8b1e; */
+    color: var(--main-text-color);
+    background-color: #f5d67b;
+    margin: 0px 1px;
 }
 
 .inline-code {
