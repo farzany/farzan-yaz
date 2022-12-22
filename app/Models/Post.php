@@ -18,7 +18,7 @@ class Post extends Model
      * @return int minutes
      */
     public function getReadDuration() {
-        $estimatedTotalWords = str_word_count($this->body);
+        $estimatedTotalWords = str_word_count(strip_tags($this->body));
         $minutesToRead = round($estimatedTotalWords / 200);
 
         return (int)max(1, $minutesToRead);
