@@ -125,7 +125,7 @@ article.post p.body {
     color: var(--main-header-color);
 } article.post .collapsible:after {
     content: '\02795';
-    font-size: 22px;
+    font-size: 18px;
     float: right;
     margin-left: 5px;
 } .active {
