@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('home', [
         'post' => Post::latest('created_at')->first(),
         'metaTitle' => 'Farzan Yazdanjou',
-        'metaDescription' => "Hello there! 👋🏼 I'm Farzan Yazdanjou, a Computer Science student at McMaster University. I'm interning at Coconut Software as a Software Developer! 🥥🌴",
+        'metaDescription' => "Hello! I'm Farzan Yazdanjou, a CS student at McMaster University interning as a full-stack developer. I create content about programming and technology.",
         'metaImage' => 'cover-photo.jpg',
     ]);
 });
@@ -31,7 +31,7 @@ Route::get('posts', function () {
         'posts' => Post::latest('created_at')->paginate(),
         'categories' => Category::all(),
         'metaTitle' => 'Posts - Farzan Yazdanjou',
-        'metaDescription' => 'Hey! 👋🏼 I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
+        'metaDescription' => 'Hey! I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
         'metaImage' => 'cover-photo.jpg',
     ]);
 });
@@ -50,7 +50,7 @@ Route::get('posts/categories/{category:slug}', function (Category $category) {
         'posts' => $category->posts()->latest('created_at')->paginate(),
         'categories' => Category::all(),
         'metaTitle' => "$category->name Posts - Farzan Yazdanjou",
-        'metaDescription' => 'Hey! 👋🏼 I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
+        'metaDescription' => 'Hey! I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
         'metaImage' => 'cover-photo.jpg',
     ]);
 });
