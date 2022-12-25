@@ -74,9 +74,13 @@ p.body, div.body {
 } img.body.break {
     margin-bottom: 0px;
 } ul.body {
-    list-style: inside;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    list-style-type: disc;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 30px;
+} ul.body li {
+    margin-bottom: 10px;
 }
 
 article.post p.body {
@@ -299,7 +303,7 @@ div.posts img.posts {
     }
 
     ul.body {
-        padding-left: 10px;
+        padding-inline-start: 20px;
     }
 
     article.post-card {
