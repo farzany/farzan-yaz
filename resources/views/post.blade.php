@@ -3,7 +3,7 @@
 
 @section('content')
     <article class="post">
-        <div id="details" class="mb-7 flex gap-5 bg-sky-100/75 rounded-xl">
+        <div id="details" class="mb-7 flex gap-3 rounded-xl">
             <img src="/storage/profile-photo.jpg" alt="" class="profile-photo w-16 my-auto rounded-xl p-1">
             <div class="text-md font-work flex flex-col justify-center">
                 <p class="author pt-0.5 text-lg leading-6">Farzan Yazdanjou</p>
@@ -17,7 +17,7 @@
                     <p class="dot px-2 dg">·</p>
                     <p class="dg"> {{ $post->getReadDuration()  }} min read </p>
                     <p class="dot px-2 dg">·</p>
-                    <a class="text-sky-600 hover:underline" href="categories/{{$post->category->slug}}">{{ $post->category->name }}</a>
+                    <a class="text-[#2563EB] hover:underline" href="categories/{{$post->category->slug}}">{{ $post->category->name }}</a>
                 </div>
             </div>
             {{-- Make share buttons --}}
