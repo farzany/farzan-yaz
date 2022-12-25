@@ -253,18 +253,30 @@ code {
 }
 
 code.string {
-    color: #f5d67b;
+    /* color: #f5d67b; */
+    color: #ffad8c;
 } code span.string {
-    color: #f5d67b;
+    color: #ffad8c;
 } code span.variable {
-    color: #4dfffc;
+    color: #00ccff;
 } code span.method {
-    color: #46b2ff;
+    color: #40a6ef;
+} code span.property {
+    color: #94ebff;
+} code span.function {
+    color: rgb(239, 223, 130);
+} code span.return {
+    color: rgb(241, 107, 207);
+} code span.number {
+    color: rgb(184, 238, 185);
 } code span.escape {
-    /* color: #ff8b1e; */
     color: var(--main-text-color);
     background-color: #f5d67b;
     margin: 0px 1px;
+} code span.white {
+    color: #fdfdfd;
+} code span.comment {
+    color: rgb(59, 186, 59);
 }
 
 .inline-code {
