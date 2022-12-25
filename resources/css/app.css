@@ -107,11 +107,13 @@ article.post p.body {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color:  rgb(241 245 249);
-    padding: 0 20px;
+    padding: 0 15px;
     border-radius: 0 0 12px 12px;
     margin-bottom: 40px;
-} article.post div.contents ul {
-    padding-bottom: 20px;
+} article.post div.contents li {
+    margin-bottom: 0px;
+} article.post div.contents ul.body {
+    margin-bottom: 15px !important;
 } article.post .collapsible {
     text-align: left;
     cursor: pointer;
@@ -122,7 +124,7 @@ article.post p.body {
     color: var(--main-header-color);
     line-height: 100%;
     background-color: rgb(241 245 249);
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
 } article.post .collapsible:hover {
     background-color: rgb(226 232 240);
@@ -310,8 +312,10 @@ div.posts img.posts {
         margin: 0;
     }
 
-    ul.body {
-        padding-inline-start: 20px;
+    ul.body li {
+        margin-bottom: 5px;
+    } article.post div.contents ul {
+        padding-inline-start: 30px;
     }
 
     article.post-card {
