@@ -2,7 +2,9 @@
 
 <head>
     @vite('resources/css/app.css')
+    @vite('resources/css/prism.css')
     @vite('resources/js/app.js')
+    @vite('resources/js/prism.js')
     <meta charset="UTF-8">
     <meta name="description" content="{{ $metaDescription ?? '' }}">
     <meta property="og:image" content="{{ "../storage/$metaImage" }}">
