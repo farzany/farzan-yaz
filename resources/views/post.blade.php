@@ -32,7 +32,7 @@
                 </button>
             </a>
         @endif
-        <div style="background-image: url('../storage/posts/{{ $post->image }}')" class="banner w-full h-96 mb-5 bg-cover bg-center rounded-xl"></div>
+        <img class="mb-5 rounded-xl" src="../storage/posts/{{ $post->image }}" alt="{{ $post->title }} - Farzan Yazdanjou">
         <p class="subtitle pl-3 border-l-2 dg text-xl font-work">
             {{ $post->subtitle }}
         </p>

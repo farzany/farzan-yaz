@@ -302,10 +302,6 @@ div.posts img.posts {
         font-size: 1.7rem;
     }
 
-    div.home div.banner {
-        height: 16rem;
-    }
-
     img.posts {
         display: none;
     }
@@ -347,8 +343,6 @@ div.posts img.posts {
         display: block;
     } article.post p.date-long {
         display: none;
-    } article.post div.banner {
-        height: 16rem;
     } article.post h1.title {
         font-size: 30px;
         line-height: 2rem;
