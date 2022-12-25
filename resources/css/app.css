@@ -36,6 +36,28 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+nav.navigation a {
+    margin: 0 7px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.db {
+    color: var(--main-text-color);
+    border-color: var(--main-text-color);
+}
+
+.dg {
+    color: #757575;
+    border-color: #757575;
+}
+
+.dw {
+    color: #fdfdfd;
+}
+
+/* Default styling for various elements */
+
 p.body, div.body {
     line-height: 32px;
     font-size: 20px;
@@ -83,6 +105,16 @@ p.body, div.body {
     margin-bottom: 10px;
 }
 
+/* Styling for posts page */
+
+div.posts img.posts {
+    transition: transform .7s ease-in-out;
+} div.posts img.posts:hover {
+    transform: rotate(360deg);
+}
+
+/* Styling for individual posts */
+
 article.post p.body {
     padding-bottom: 40px;
 } article.post p.body.break {
@@ -102,7 +134,20 @@ article.post p.body {
     padding-top: 20px;
 } article.post hr {
     border: 1px solid #757575;
-} article.post div.contents {
+} article.post a.download-image {
+    position: relative;
+} article.post a.download-image::before {
+    content: "Click to download image";
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    color: #fdfdfd;
+    font-size: 16px;
+}
+
+/* Styling for the table of contents within a post */
+
+article.post div.contents {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -139,16 +184,9 @@ article.post p.body {
     color: var(--main-header-color) !important;
 } .active:after {
     content: "\2796" !important;
-} article.post a.download-image {
-    position: relative;
-} article.post a.download-image::before {
-    content: "Click to download image";
-    position: absolute;
-    right: 20px;
-    top: 12px;
-    color: #fdfdfd;
-    font-size: 16px;
 }
+
+/* Styling for default text input field */
 
 input[type="text"] {
     caret-color: var(--main-text-color);
@@ -158,25 +196,7 @@ input[type="text"] {
     outline: 1.5px solid #6b8dff;
 } 
 
-nav.navigation a {
-    margin: 0 7px;
-    padding: 5px 10px;
-    text-align: center;
-}
-
-.db {
-    color: var(--main-text-color);
-    border-color: var(--main-text-color);
-}
-
-.dg {
-    color: #757575;
-    border-color: #757575;
-}
-
-.dw {
-    color: #fdfdfd;
-}
+/* Styling for post cards */
 
 article.post-card {
     /* background: #ddfcff; */
@@ -193,6 +213,8 @@ article.post-card {
 article.post p.date-short {
     display: none;
 }
+
+/* Styling for social media icons */
 
 div.social-media a {
     box-sizing: content-box;
@@ -220,6 +242,9 @@ div.connect a {
     color: rgb(37 99 235);
     transform: scale(1.2);
 }
+
+/* Styling for code blocks */
+/* Not greatly used since installing Prism */
 
 pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
@@ -287,12 +312,6 @@ code.string {
     padding: 3px 7px;
     border-radius: 8px;
     font-size: 0.9em;
-}
-
-div.posts img.posts {
-    transition: transform .7s ease-in-out;
-} div.posts img.posts:hover {
-    transform: rotate(360deg);
 }
 
 @media only screen and (max-width: 640px) {
