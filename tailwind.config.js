@@ -21,6 +21,8 @@ module.exports = {
         'db': 'rgb(55, 65, 81)',
         'db2': '#212427',
         'dg': '#757575',
+        'dw': '#fdfdfd',
+        'main-text': 'rgb(31, 41, 55)',
       },
     },
   },
