@@ -1,5 +1,9 @@
 import './bootstrap';
 
+/* 
+* Collapsible component logic
+*/
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
