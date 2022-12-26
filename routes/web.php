@@ -97,3 +97,9 @@ Route::post('newsletter', function () {
 
     return redirect('posts')->with('success', "You've subscribed to the newsletter! Check your email to confirm.");
 });
+
+Route::get('sitemap.xml', function () {
+    return response()->view('sitemap', [
+        'posts' => Post::latest('created_at')->get(),
+    ])->header('Content-Type', 'text/xml');
+});
