@@ -5,6 +5,7 @@ use App\Models\Category;
 use MailchimpMarketing\ApiClient;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\ValidationException;
+use App\Http\Controllers\SitemapXmlController;
 
 /*
 |--------------------------------------------------------------------------
@@ -98,8 +99,5 @@ Route::post('newsletter', function () {
     return redirect('posts')->with('success', "You've subscribed to the newsletter! Check your email to confirm.");
 });
 
-Route::get('sitemap.xml', function () {
-    return response()->view('sitemap', [
-        'posts' => Post::latest('created_at')->get(),
-    ])->header('Content-Type', 'text/xml');
-});
+Route::get('sitemap.xml', [SitemapXmlController::class, 'index']);
+Route::get('sitemap.xml/ping', [SitemapXmlController::class, 'ping']);
