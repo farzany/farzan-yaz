@@ -4,7 +4,7 @@
         <url>
             <loc>{{ url('/') }}/posts/{{ $post->slug }}</loc>
             <lastmod>{{ $post->created_at->tz('UTC')->toAtomString() }}</lastmod>
-            <changefreq>daily</changefreq>
+            <changefreq>weekly</changefreq>
             <priority>0.8</priority>
         </url>
     @endforeach
