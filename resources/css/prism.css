@@ -98,7 +98,7 @@ pre.end {
 }
 
 .token.class-name {
-    color: unset;
+    color: rgb(0, 235, 160);
 }
 
 .token.boolean {
@@ -111,7 +111,6 @@ pre.end {
 
 .token.number {
     color: rgb(184, 238, 185);
-    ;
 }
 
 .token.atrule {
@@ -171,7 +170,7 @@ pre.end {
 }
 
 .token.variable {
-    color: unset;
+    color: #94ebff;
 }
 
 .token.operator {

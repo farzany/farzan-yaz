@@ -125,6 +125,11 @@ article.post p.body {
 } article.post h2.body {
     padding-bottom: 12px;
     line-height: 130%;
+} article.post h2.sub-heading {
+    padding-bottom: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3B82F6;
 } article.post div.side-note {
     background-color:  rgb(241 245 249);
     padding: 20px;
@@ -202,10 +207,10 @@ article.post-card {
     /* background: #ddfcff; */
 } article.post-card div.thumbnail {
     transition: all .2s ease-in-out;
-    background-size: 110%;
+    background-size: 100%;
 } article.post-card:hover div.thumbnail {
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-    background-size: 150%;
+    background-size: 140%;
 } article.post-card div.thumbnail#top {
     display: none;
 }
@@ -304,6 +309,8 @@ code.string {
     color: #fdfdfd;
 } code span.comment {
     color: rgb(59, 186, 59);
+} code span.red {
+    color: rgb(255, 103, 103);
 }
 
 .inline-code {
