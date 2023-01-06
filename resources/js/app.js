@@ -1,4 +1,5 @@
 import './bootstrap';
+import './components/Example';
 
 /* 
 * Collapsible component logic
