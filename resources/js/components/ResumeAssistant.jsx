@@ -91,10 +91,6 @@ function ResumeAssistant() {
     });
   };
 
-  useEffect(() => {
-    console.log(generatedResume);
-  }, [generatedResume]);
-
   return (
     <div className="w-full h-max relative">
         <div id="description" className="pb-8">
