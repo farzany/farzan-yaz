@@ -94,7 +94,7 @@ function ResumeAssistant() {
   return (
     <div className="w-full h-max relative">
         <div id="description" className="pb-8">
-          <h1 className="font-bold text-5xl leading-10 pt-8 pb-6">
+          <h1 className="font-bold text-3xl pb-2 sm:text-5xl sm:leading-10 sm:pb-6 sm:pt-8">
               AI Resume Assistant <span>📄</span>
           </h1>
           <p className="text-lg leading-7 pt-2">
