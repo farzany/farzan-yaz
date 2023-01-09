@@ -12,7 +12,7 @@ class SitemapXmlController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(): Response
+    public function index()
     {
         return response()->view('sitemap', [
             'posts' => Post::latest('created_at')->get(),

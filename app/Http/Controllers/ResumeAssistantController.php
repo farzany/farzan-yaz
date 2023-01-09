@@ -13,7 +13,7 @@ class ResumeAssistantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(): Response
+    public function index()
     {
         return response()->view('/projects/resume-builder', [
             'metaTitle' => 'AI Resume Assistant - Farzan Yazdanjou',
@@ -26,9 +26,9 @@ class ResumeAssistantController extends Controller
      * Uses the given information to generate resume content.
      *
      * @param Request $request
-     * @return \Illuminate\Http\Response Resume content object
+     * @return \Illuminate\Http\JsonResponse Resume content object
      */
-    public function create(Request $request): Response
+    public function create(Request $request)
     {
         $attributes = $request->validate([
             'current' => 'required|string|max:500',
