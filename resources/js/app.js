@@ -1,5 +1,5 @@
 import './bootstrap';
-import './components/ResumeAssistant';
+import './pages/ResumeAssistant';
 
 /* 
  * Collapsible component logic
