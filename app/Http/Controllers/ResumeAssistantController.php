@@ -4,10 +4,16 @@ namespace App\Http\Controllers;
 
 use OpenAI;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ResumeAssistantController extends Controller
 {
-    public function index()
+    /**
+     * Displays the AI Resume Assistant view.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index(): Response
     {
         return response()->view('/projects/resume-builder', [
             'metaTitle' => 'AI Resume Assistant - Farzan Yazdanjou',
@@ -16,7 +22,13 @@ class ResumeAssistantController extends Controller
         ]);
     }
 
-    public function create(Request $request)
+    /**
+     * Uses the given information to generate resume content.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\Response Resume content object
+     */
+    public function create(Request $request): Response
     {
         $attributes = $request->validate([
             'current' => 'required|string|max:500',

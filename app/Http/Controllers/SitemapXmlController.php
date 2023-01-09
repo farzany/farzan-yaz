@@ -3,17 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class SitemapXmlController extends Controller
 {
-    public function index()
+    /**
+     * Displays the Sitemap view.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index(): Response
     {
         return response()->view('sitemap', [
             'posts' => Post::latest('created_at')->get(),
         ])->header('Content-Type', 'text/xml');
     }
 
+    /**
+     * Pings Google about updates to the Sitemap.
+     *
+     */
     public function ping()
     {
         $sitemapUrl = "http://www.farzanyaz.com/sitemap.xml";
