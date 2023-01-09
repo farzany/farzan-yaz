@@ -193,11 +193,11 @@ article.post div.contents {
 
 /* Styling for default text input field */
 
-input[type="text"] {
+div.newsletter input[type="text"] {
     caret-color: var(--main-text-color);
     font-family: 'Work Sans', 'ui-sans-serif';
     outline: none;
-} input[type="text"]:focus {
+} div.newsletter input[type="text"]:focus {
     outline: 1.5px solid #6b8dff;
 } 
 
