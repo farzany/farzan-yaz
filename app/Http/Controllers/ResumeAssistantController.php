@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use OpenAI;
 use Illuminate\Http\Request;
 
-
 class ResumeAssistantController extends Controller
 {
     public function index()
@@ -13,7 +12,7 @@ class ResumeAssistantController extends Controller
         return response()->view('/projects/resume-builder', [
             'metaTitle' => 'AI Resume Assistant - Farzan Yazdanjou',
             'metaDescription' => "Looking for an easier way to create a professional resume? AI Resume Assistant is here to help! My project uses artificial intelligence to take basic information about your experiences and generate polished resume content. Simply enter your work history, education, and skills, and let AI do the rest. Try it out today and streamline your job search!",
-            'metaImage' => 'cover-photo.jpg',
+            'metaImage' => 'openai.jpg',
         ]);
     }
 
