@@ -6,6 +6,11 @@
         <priority>1.00</priority>
     </url>
     <url>
+        <loc>https://farzanyaz.com/resume-assistant</loc>
+        <lastmod>2023-01-05T01:00:54+00:00</lastmod>
+        <priority>0.90</priority>
+    </url>
+    <url>
         <loc>https://farzanyaz.com/posts</loc>
         <lastmod>2023-01-05T01:00:54+00:00</lastmod>
         <priority>0.80</priority>
