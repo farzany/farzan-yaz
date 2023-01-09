@@ -6,6 +6,7 @@ use MailchimpMarketing\ApiClient;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\ValidationException;
 use App\Http\Controllers\SitemapXmlController;
+use App\Http\Controllers\ResumeAssistantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -101,3 +102,6 @@ Route::post('newsletter', function () {
 
 Route::get('sitemap.xml', [SitemapXmlController::class, 'index']);
 Route::get('sitemap.xml/ping', [SitemapXmlController::class, 'ping']);
+
+Route::get('resume-assistant', [ResumeAssistantController::class, 'index']);
+Route::post('resume-assistant/create', [ResumeAssistantController::class, 'create']);
