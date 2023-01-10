@@ -8,6 +8,11 @@ use Illuminate\Validation\ValidationException;
 
 class NewsletterController extends Controller
 {
+    /**
+     * Adds the request email to mailChimp members list.
+     *
+     * @return \Illuminate\Routing\Redirector|Illuminate\Validation\ValidationException
+     */
     public function create(Request $request)
     {
         $request->validate(['email' => 'required|email']);

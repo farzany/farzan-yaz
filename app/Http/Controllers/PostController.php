@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    /**
+     * Displays a view of all posts.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
     public function all()
     {
         return view('posts', [
@@ -19,6 +24,11 @@ class PostController extends Controller
         ]);
     }
 
+    /**
+     * Displays a view of a single post.
+     *
+     * @return \Illuminate\Contracts\View\View
+     */
     public function show(Post $post)
     {
         return view('post', [
