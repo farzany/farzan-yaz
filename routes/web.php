@@ -3,6 +3,7 @@
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\SitemapXmlController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ResumeAssistantController;
@@ -27,24 +28,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('posts', function () {
-    return view('posts', [
-        'posts' => Post::latest('created_at')->paginate(),
-        'categories' => Category::all(),
-        'metaTitle' => 'Posts - Farzan Yazdanjou',
-        'metaDescription' => 'Hey! I post short articles about tech, programming tutorials, career discussions, and more. At least one a week - with an accompanying YouTube video.',
-        'metaImage' => 'cover-photo.jpg',
-    ]);
-});
-
-Route::get('posts/{post:slug}', function (Post $post) {
-    return view('post', [
-        'post' => $post,
-        'metaTitle' => "$post->title - Farzan Yazdanjou",
-        'metaDescription' => $post->excerpt,
-        'metaImage' => "posts/$post->image",
-    ]);
-});
+Route::get('posts', [PostController::class, 'all']);
+Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 Route::get('posts/categories/{category:slug}', function (Category $category) {
     return view('posts', [
