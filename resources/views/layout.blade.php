@@ -77,7 +77,7 @@
             <a href="https://www.instagram.com/farzany/" target="__blank" class="fa fa-instagram" title="Instagram"></a>
         </div>
         <p class="font-work text-dg">
-            © 2022 Farzan Yazdanjou
+            © {{ date("Y") }} Farzan Yazdanjou
         </p>
     </footer>
 
