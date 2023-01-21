@@ -119,6 +119,12 @@ article.post p.body {
     padding-bottom: 40px;
 } article.post p.body.break {
     padding-bottom: 20px;
+} article.post p.body.break.highlight {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    padding: 0 8px;
+    background-color: #FEF9C3;
+    width: fit-content;
 } article.post p.body.list-header {
     padding-bottom: 10px;
     font-weight: 600;
@@ -375,7 +381,7 @@ code.string {
         display: none;
     } article.post h1.title {
         font-size: 30px;
-        line-height: 2rem;
+        line-height: 2.1rem;
     } article.post p.subtitle {
         font-size: 18px;
         line-height: 1.5rem;
