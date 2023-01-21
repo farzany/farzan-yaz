@@ -14,7 +14,7 @@
                 </div>
                 <img class="posts grow flex-grow w-32" src="/storage/connected-globe.svg" alt="">
             </div>
-            <div class="flex gap-5 pt-7">
+            <div class="flex gap-5 pt-7 flex-wrap">
                 <a class="px-5 py-1  font-work rounded-xl {{Request::path() === "posts" ? 'text-white bg-db' : 'bg-gray-100 text-gray-600'}}" href="/posts">
                     All
                 </a>
