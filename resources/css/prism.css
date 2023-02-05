@@ -154,7 +154,7 @@ pre.end {
 }
 
 .token.builtin {
-    color: unset;
+    color: rgb(78, 201, 176);
 }
 
 .token.inserted {
