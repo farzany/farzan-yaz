@@ -4,9 +4,6 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
-    "./resources/views/*.blade.php",
-    "./resources/views/components/*.blade.php",
-    "./resources/views/projects/*.blade.php",
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.jsx",

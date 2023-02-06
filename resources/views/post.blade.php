@@ -1,6 +1,5 @@
 @extends('layout')
 
-
 @section('content')
     <article class="post">
         <div id="details" class="mb-7 flex gap-3 rounded-xl">
