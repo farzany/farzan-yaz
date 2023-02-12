@@ -12,7 +12,7 @@
                 {{ $post->getReadDuration() }} min read
             </p>
             <h2 class="font-bold text-[1.4rem] leading-7">
-                    {{ $post->title }}
+                {{ $post->title }}
             </h2>
             <div class="pt-1 text-base line-clamp-2">
                 {{ $post->excerpt }}

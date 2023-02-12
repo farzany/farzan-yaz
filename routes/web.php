@@ -4,6 +4,7 @@ use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SitemapXmlController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\ResumeAssistantController;
@@ -49,13 +50,7 @@ Route::get('resume', function () {
     ]);
 });
 
-Route::get('projects', function () {
-    return view('projects', [
-        'metaTitle' => 'Projects - Farzan Yazdanjou',
-        'metaDescription' => '', // TODO
-        'metaImage' => 'cover-photo.jpg',
-    ]);
-});
+Route::get('projects', [ProjectController::class, 'all']);
 
 Route::post('newsletter', [NewsletterController::class, 'create']);
 

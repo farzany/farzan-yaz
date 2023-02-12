@@ -229,6 +229,14 @@ article.post p.date-short {
     display: none;
 }
 
+/* Styling for Projects page */
+
+div#projects img.header {
+    transition: transform .5s ease-in-out;
+} div#projects img.header:hover {
+    transform: scale(1.3);
+}
+
 /* Styling for social media icons */
 
 div.social-media a {
@@ -340,7 +348,7 @@ code.string {
         font-size: 1.7rem;
     }
 
-    img.posts {
+    img.posts, img.header {
         display: none;
     }
 
@@ -393,7 +401,7 @@ code.string {
         width: 3rem;
     }
 
-    div.posts div.description h1 {
+    div.description h1 {
         font-size: 1.7rem;
     } div.newsletter {
         flex-wrap: wrap;
