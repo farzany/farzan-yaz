@@ -1,3 +1,8 @@
 *
 !public/
+!public/posts/
+!public/posts/*
+!public/posts/*/*
+!public/favicon/
+!public/favicon/*
 !.gitignore

@@ -103,6 +103,11 @@ p.body, div.body {
     padding-inline-start: 30px;
 } ul.body li {
     margin-bottom: 10px;
+} ul.body.numbered {
+    list-style-type: decimal;
+    padding-inline-start: 40px;
+} ul.body.end {
+    margin-bottom: 40px !important;
 }
 
 /* Styling for posts page */
