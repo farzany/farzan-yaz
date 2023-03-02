@@ -110,6 +110,17 @@ p.body, div.body {
     margin-bottom: 40px !important;
 }
 
+/* Default Styling for iFrames */
+
+.video-wrapper {
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /* Styling for posts page */
 
 div.posts img.posts {
