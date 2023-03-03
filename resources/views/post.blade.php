@@ -21,7 +21,7 @@
             </div>
             {{-- Make share buttons --}}
         </div>
-        <h1 class="title font-bold text-4xl leading-[2.75rem] mb-5">
+        <h1 class="title font-bold text-5xl leading-[3.5rem] mb-4">
             {{ $post->title }}
         </h1>
         @if ($post->video)
