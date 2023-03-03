@@ -59,7 +59,7 @@
                 </a>
             </nav>
         </div>
-        <div class="mt-5 mb-12">
+        <div class="mt-4 mb-12">
             @yield('content')
         </div>
     </div>
