@@ -3,6 +3,8 @@
 !public/posts/
 !public/posts/*
 !public/posts/*/*
+!public/projects/
+!public/projects/*
 !public/favicon/
 !public/favicon/*
 !.gitignore
