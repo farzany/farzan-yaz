@@ -30,7 +30,7 @@
         <div class="flex justify-center items-center flex-col">
             <h2 class="text-3xl font-work text-center">Connect with me!</h2>
             <p class="font-work text-center text-md text-gray-400">LinkedIn · GitHub · YouTube · Instagram</p>
-            <p class="font-work text-center body pt-2">Let's talk tech, development, career, or just like eachother's Instagram posts like semi-strangers.</p>
+            <p class="font-work text-center body pt-2">Let's talk tech, development, career, or just like each other's Instagram posts like semi-strangers.</p>
             <div class="connect flex justify-center gap-5 pt-6">
                 <a href="https://www.linkedin.com/in/farzany/" target="__blank" class="fa fa-linkedin" title="LinkedIn"></a>
                 <a href="https://github.com/farzany" target="__blank" class="fa fa-github" title="GitHub"></a>
