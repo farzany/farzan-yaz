@@ -103,11 +103,15 @@ p.body, div.body {
     padding-inline-start: 30px;
 } ul.body li {
     margin-bottom: 10px;
+} ul.body li.last {
+    margin-bottom: 0;
 } ul.body.numbered {
     list-style-type: decimal;
     padding-inline-start: 40px;
 } ul.body.end {
     margin-bottom: 40px !important;
+} ul.body.break {
+    margin-bottom: 0 !important;
 }
 
 /* Default Styling for iFrames */
