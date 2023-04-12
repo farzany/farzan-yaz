@@ -25,6 +25,11 @@
         <lastmod>2023-01-05T01:00:54+00:00</lastmod>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>https://farzanyaz.com/privacy-policy</loc>
+        <lastmod>2023-01-05T01:00:54+00:00</lastmod>
+        <priority>0.70</priority>
+    </url>
     @foreach ($posts as $post)
         <url>
             <loc>{{ url('/') }}/posts/{{ $post->slug }}</loc>

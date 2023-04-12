@@ -59,3 +59,11 @@ Route::get('sitemap.xml/ping', [SitemapXmlController::class, 'ping']);
 
 Route::get('resume-assistant', [ResumeAssistantController::class, 'index']);
 Route::post('resume-assistant/create', [ResumeAssistantController::class, 'create']);
+
+Route::get('privacy-policy', function () {
+    return view('privacy-policy', [
+        'metaTitle' => 'Privacy Policy - Farzan Yazdanjou',
+        'metaDescription' => 'The Privacy Policy for all of my Google Chrome extensions.',
+        'metaImage' => 'cover-photo.jpg',
+    ]);
+});
