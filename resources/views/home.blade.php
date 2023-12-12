@@ -9,11 +9,11 @@
         <h1 class="text-center text-3xl font-semibold font-work p-3 pt-0 mb-2 sm:text-4xl">
             I'm Farzan Yazdanjou, a Computer Science student at McMaster University.
         </h1>
-        <p class="dg text-xl font-work text-center mb-5">I'm currently interning at Coconut Software as a Software Developer! 🥥🌴</p>
+        <p class="dg text-xl font-work text-center mb-5">I'm currently fascinated by Web Development 🥥🌴</p>
         <div style="background-image: url('/storage/cover-photo.jpg')" class="banner mb-10 w-full h-96 bg-cover bg-center rounded-2xl"></div>
         <div>
             <p class="body mb-3">
-                I'm a third year student at McMaster University studying Computer Science. As a full-stack programmer, I am passionate about web-app development! For more information about my academic career, please visit my LinkedIn profile!
+                I'm a fifth year student at McMaster University studying Computer Science. As a full-stack programmer, I am passionate about web-app development! For more information about my academic career, please visit my LinkedIn profile!
             </p>
             <p class="body mb-5">
                 I have 3000 hours on CSGO, which basically makes me a professional gamer. I love biking through trails and the city and photographing the scenary. I've watched the Iron Man trilogy countless times. I'm always listening to music - my favorite song is Mutual Butterflies by Ryan Trey. I've lost my fair share of money gambling on Cryptocurrency. As one does, I of course also love memes.

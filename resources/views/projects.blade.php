@@ -11,7 +11,7 @@
                     I believe that there is no better way to learn programming than diving into projects! Here are some of my notable projects - if you're interested in learning more about any of them, feel free to connect with me. All of my projects are open-source, so you can explore them on my <a href="https://github.com/farzany" target="__blank" class="inline" title="GitHub">GitHub</a>!
                 </p>
             </div>
-            <img class="header grow flex-grow w-40 -mr-8" src="/storage/server-rack.svg" alt="">
+            <img class="header flex-grow w-40 -mr-8" src="/storage/server-rack.svg" alt="">
         </div>
         <div id="projects">
             @if ($projects->isNotEmpty())

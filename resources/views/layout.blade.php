@@ -60,9 +60,6 @@
                 <a href="/posts" class="hover:shadow rounded-xl {{Request::path() === 'posts' ? 'text-db2' : 'text-gray-400'}}">
                     Posts
                 </a>
-                <a href="/resume" class="hover:shadow rounded-xl {{Request::path() === 'resume' ? 'text-db2' : 'text-gray-400'}}">
-                    Resume
-                </a>
                 <a href="/projects" class="hover:shadow rounded-xl {{Request::path() === 'projects' ? 'text-db2' : 'text-gray-400'}}">
                     Projects
                 </a>
